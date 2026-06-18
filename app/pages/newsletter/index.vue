@@ -1,13 +1,26 @@
 <template>
-  <div class="py-16 md:py-24 max-w-2xl mx-auto text-center space-y-6">
-    <div class="flex justify-center">
-      <Badge :text="t('status_coming_soon')" variant="status-coral" />
+  <div class="py-[96px] max-w-6xl mx-auto">
+    <div class="border-b border-hairline pb-4 mb-8">
+      <div class="font-mono font-bold text-[16px] leading-[1.5] text-ink uppercase mb-1">
+        Updates
+      </div>
+      <h1 class="font-mono font-bold text-[16px] leading-[1.5] text-ink">
+        {{ t('stub_newsletter_title') }}
+      </h1>
     </div>
-    <h1 class="text-4xl md:text-5xl font-serif text-ink tracking-tight">{{ t('stub_newsletter_title') }}</h1>
-    <p class="text-base text-body font-sans-ui leading-relaxed">
-      {{ t('stub_newsletter_body') }}
-    </p>
-    <div class="pt-6">
+    <div class="space-y-0">
+      <div class="border-t border-hairline py-3 flex items-start gap-2">
+        <span class="font-mono font-bold text-[16px] text-ink shrink-0">[+]</span>
+        <p class="font-mono font-normal text-[16px] leading-[1.5] text-body">
+          {{ t('stub_newsletter_body') }}
+        </p>
+      </div>
+      <div class="border-t border-b border-hairline py-3 flex items-start gap-2">
+        <span class="font-mono font-bold text-[16px] text-ink shrink-0">[x]</span>
+        <span class="font-mono font-normal text-[16px] leading-[1.5] text-mute">{{ t('status_coming_soon') }}</span>
+      </div>
+    </div>
+    <div class="pt-8">
       <CTAButton to="/" variant="secondary">{{ t('back_to_home') }}</CTAButton>
     </div>
   </div>

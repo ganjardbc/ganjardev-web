@@ -2,7 +2,7 @@
   <component
     :is="componentType"
     v-bind="bindingProps"
-    class="inline-flex items-center justify-center font-sans-ui text-sm font-medium rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-canvas disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+    class="inline-flex items-center justify-center font-mono font-medium text-[16px] leading-[2] px-5 py-1 rounded-[4px] transition-colors focus:outline-none disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer no-underline"
     :class="variantClasses"
   >
     <slot />
@@ -20,10 +20,7 @@ const props = withDefaults(
     disabled?: boolean
     target?: string
   }>(),
-  {
-    variant: 'primary',
-    disabled: false
-  }
+  { variant: 'primary', disabled: false }
 )
 
 const componentType = computed(() => {
@@ -33,24 +30,20 @@ const componentType = computed(() => {
 })
 
 const bindingProps = computed(() => {
-  if (props.to) {
-    return { to: props.to }
-  }
-  if (props.href) {
-    return { href: props.href, target: props.target, rel: props.target === '_blank' ? 'noopener noreferrer' : undefined }
-  }
+  if (props.to) return { to: props.to }
+  if (props.href) return { href: props.href, target: props.target, rel: props.target === '_blank' ? 'noopener noreferrer' : undefined }
   return { type: 'button', disabled: props.disabled }
 })
 
 const variantClasses = computed(() => {
   switch (props.variant) {
     case 'secondary':
-      return 'bg-transparent text-ink border border-hairline hover:bg-card px-5 py-2.5 h-[40px]'
+      return 'bg-canvas text-ink border border-hairline-strong hover:bg-surface-soft hover:text-ink'
     case 'text':
-      return 'bg-transparent text-primary hover:text-primary-active underline underline-offset-4 px-0 py-0'
+      return 'bg-transparent text-ink underline underline-offset-3 px-0 py-0 hover:text-charcoal'
     case 'primary':
     default:
-      return 'bg-primary text-canvas hover:bg-primary/95 px-5 py-2.5 h-[40px] font-semibold'
+      return 'bg-ink text-canvas hover:bg-ink-deep hover:text-canvas'
   }
 })
 </script>

@@ -1,27 +1,22 @@
 <template>
-  <div class="flex items-center space-x-2 text-xs font-mono text-muted select-none">
-    <button 
-      @click="setLocale('en')" 
-      class="hover:text-ink transition-colors duration-200 focus:outline-none"
-      :class="{ 'text-ink font-semibold border-b border-primary pb-0.5': locale === 'en', 'pb-0.5 border-b border-transparent': locale !== 'en' }"
+  <div class="flex items-center gap-1 font-mono text-[14px] leading-[2] text-mute select-none">
+    <button
+      @click="setLocale('en')"
+      class="px-1 hover:text-ink transition-colors focus:outline-none"
+      :class="locale === 'en' ? 'text-ink font-bold' : ''"
       aria-label="Switch to English"
-    >
-      EN
-    </button>
-    <span class="text-muted/40">/</span>
-    <button 
-      @click="setLocale('id')" 
-      class="hover:text-ink transition-colors duration-200 focus:outline-none"
-      :class="{ 'text-ink font-semibold border-b border-primary pb-0.5': locale === 'id', 'pb-0.5 border-b border-transparent': locale !== 'id' }"
+    >EN</button>
+    <span class="text-hairline-strong">/</span>
+    <button
+      @click="setLocale('id')"
+      class="px-1 hover:text-ink transition-colors focus:outline-none"
+      :class="locale === 'id' ? 'text-ink font-bold' : ''"
       aria-label="Switch to Indonesian"
-    >
-      ID
-    </button>
+    >ID</button>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useLocale } from '~/composables/useLocale'
-
 const { locale, setLocale } = useLocale()
 </script>

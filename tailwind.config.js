@@ -15,26 +15,57 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        canvas: 'color-mix(in srgb, var(--color-canvas) calc(100% * <alpha-value>), transparent)',
-        card: 'color-mix(in srgb, var(--color-card) calc(100% * <alpha-value>), transparent)',
-        'card-elevated': 'color-mix(in srgb, var(--color-card-elevated) calc(100% * <alpha-value>), transparent)',
-        primary: {
-          DEFAULT: 'color-mix(in srgb, var(--color-primary) calc(100% * <alpha-value>), transparent)',
-          active: 'color-mix(in srgb, var(--color-primary-active) calc(100% * <alpha-value>), transparent)',
-        },
-        ink: 'color-mix(in srgb, var(--color-ink) calc(100% * <alpha-value>), transparent)',
-        body: 'color-mix(in srgb, var(--color-body) calc(100% * <alpha-value>), transparent)',
-        muted: 'color-mix(in srgb, var(--color-muted) calc(100% * <alpha-value>), transparent)',
-        hairline: 'color-mix(in srgb, var(--color-hairline) calc(100% * <alpha-value>), transparent)',
+        // Canvas & surfaces
+        canvas: 'var(--color-canvas)',
+        'surface-soft': 'var(--color-surface-soft)',
+        'surface-card': 'var(--color-surface-card)',
+        'surface-dark': 'var(--color-surface-dark)',
+        'surface-dark-elevated': 'var(--color-surface-dark-elevated)',
+        // Text
+        ink: 'var(--color-ink)',
+        'ink-deep': 'var(--color-ink-deep)',
+        charcoal: 'var(--color-charcoal)',
+        body: 'var(--color-body)',
+        mute: 'var(--color-mute)',
+        stone: 'var(--color-stone)',
+        ash: 'var(--color-ash)',
+        'on-dark': 'var(--color-on-dark)',
+        // Borders
+        hairline: 'var(--color-hairline)',
+        'hairline-strong': 'var(--color-hairline-strong)',
+        // Semantic (in-TUI only)
+        accent: 'var(--color-accent)',
+        danger: 'var(--color-danger)',
+        warning: 'var(--color-warning)',
+        success: 'var(--color-success)',
       },
       fontFamily: {
-        serif: ['Cormorant Garamond', 'EB Garamond', 'Tiempos Headline', 'serif'],
-        sans: ['Inter', 'StyreneB', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        mono: ['JetBrains Mono', 'IBM Plex Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
+        // All text roles use the mono stack — no sans or serif
+        sans: ['JetBrains Mono', 'IBM Plex Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
+        serif: ['JetBrains Mono', 'IBM Plex Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
+      },
+      fontSize: {
+        'display-xl': ['38px', { lineHeight: '1.5', fontWeight: '700' }],
+        'heading-md': ['16px', { lineHeight: '1.5', fontWeight: '700' }],
+        'body-md': ['16px', { lineHeight: '1.5', fontWeight: '400' }],
+        'body-strong': ['16px', { lineHeight: '1.5', fontWeight: '500' }],
+        'button-md': ['16px', { lineHeight: '2', fontWeight: '500' }],
+        'caption-md': ['14px', { lineHeight: '2', fontWeight: '400' }],
+      },
+      borderRadius: {
+        'none': '0px',
+        'sm': '4px',
+        'full': '9999px',
+      },
+      spacing: {
+        'section': '96px',
+      },
+      maxWidth: {
+        'content': '960px',
       },
       letterSpacing: {
-        tightest: '-0.03em',
-        tighter: '-0.02em',
+        normal: '0',
       }
     },
   },

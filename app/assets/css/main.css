@@ -3,143 +3,213 @@
 @tailwind utilities;
 
 :root {
-  /* Light Mode (Cream) Brand Colors */
-  --color-canvas: #faf9f5;
-  --color-card: #efe9de;
-  --color-card-elevated: #e8e0d2;
-  --color-ink: #141413;
-  --color-body: #3d3d3a;
-  --color-muted: #6c6a64;
-  --color-hairline: #e6dfd8;
-  --color-primary: #cc785c;
-  --color-primary-active: #a9583e;
-  --selection-bg: rgba(204, 120, 92, 0.25);
+  /* Canvas & Surfaces */
+  --color-canvas: #fdfcfc;
+  --color-surface-soft: #f8f7f7;
+  --color-surface-card: #f1eeee;
+  --color-surface-dark: #201d1d;
+  --color-surface-dark-elevated: #302c2c;
+
+  /* Text */
+  --color-ink: #201d1d;
+  --color-ink-deep: #0f0000;
+  --color-charcoal: #302c2c;
+  --color-body: #424245;
+  --color-mute: #646262;
+  --color-stone: #6e6e73;
+  --color-ash: #9a9898;
+  --color-on-dark: #fdfcfc;
+
+  /* Borders */
+  --color-hairline: rgba(15, 0, 0, 0.12);
+  --color-hairline-strong: #646262;
+
+  /* Semantic Accent (TUI only) */
+  --color-accent: #007aff;
+  --color-danger: #ff3b30;
+  --color-warning: #ff9f0a;
+  --color-success: #30d158;
+
+  /* TUI Mockup — always dark, never inherits theme */
+  --color-tui-bg: #201d1d;
+  --color-tui-elevated: #302c2c;
+  --color-tui-text: #fdfcfc;
+  --color-tui-ash: #9a9898;
+  --color-tui-mute: #646262;
+  --color-tui-border: rgba(253, 252, 252, 0.08);
 }
 
 html.dark {
-  /* Dark Mode (Warm Black) Brand Colors */
-  --color-canvas: #0b0a09;
-  --color-card: #141311;
-  --color-card-elevated: #1e1c1a;
-  --color-ink: #faf9f5;
-  --color-body: #c5c2bc;
-  --color-muted: #8a857e;
-  --color-hairline: #282622;
-  --color-primary: #e07a5f;
-  --color-primary-active: #cc5b3e;
-  --selection-bg: rgba(224, 122, 95, 0.25);
+  /* Canvas & Surfaces — inverted warm-dark */
+  --color-canvas: #181515;
+  --color-surface-soft: #201d1d;
+  --color-surface-card: #272323;
+  --color-surface-dark: #302c2c;
+  --color-surface-dark-elevated: #3d3838;
+
+  /* Text — cream on dark */
+  --color-ink: #fdfcfc;
+  --color-ink-deep: #e8e5e5;
+  --color-charcoal: #d0cdcd;
+  --color-body: #a8a5a5;
+  --color-mute: #7a7878;
+  --color-stone: #6a6868;
+  --color-ash: #4e4c4c;
+  --color-on-dark: #181515;
+
+  /* Borders */
+  --color-hairline: rgba(253, 252, 252, 0.10);
+  --color-hairline-strong: #5a5858;
+
+  /* TUI Mockup — stays dark, but shifted lighter to contrast the darker page */
+  --color-tui-bg: #272323;
+  --color-tui-elevated: #3d3838;
+  --color-tui-text: #fdfcfc;
+  --color-tui-ash: #9a9898;
+  --color-tui-mute: #7a7878;
+  --color-tui-border: rgba(253, 252, 252, 0.10);
 }
 
 @layer base {
   html {
     background-color: var(--color-canvas);
     color: var(--color-body);
-    font-family: 'Inter', 'StyreneB', sans-serif;
-    scroll-behavior: smooth;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-family: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    font-size: 16px;
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   }
 
   body {
     background-color: var(--color-canvas);
-    transition: background-color 0.3s ease;
   }
 
-  /* Custom selections */
   ::selection {
-    background-color: var(--selection-bg);
+    background-color: rgba(32, 29, 29, 0.12);
     color: var(--color-ink);
   }
 
-  /* Custom typography modifications */
   h1, h2, h3, h4, h5, h6 {
     color: var(--color-ink);
-    font-family: 'Cormorant Garamond', 'EB Garamond', 'Tiempos Headline', serif;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    font-family: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  a {
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  a:not([class*="bg-ink"]):not([class*="bg-surface"]):hover {
+    color: var(--color-charcoal);
   }
 }
 
-@layer utilities {
-  .font-serif-display {
-    font-family: 'Cormorant Garamond', 'EB Garamond', 'Tiempos Headline', serif;
-  }
-  .font-sans-ui {
-    font-family: 'Inter', 'StyreneB', sans-serif;
-  }
+/* ASCII bracket list markers */
+.ascii-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ascii-list li {
+  padding: 8px 0;
+  color: var(--color-body);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.ascii-list li::before {
+  content: '[+] ';
+  color: var(--color-ink);
+  font-weight: 700;
+}
+
+.ascii-list li.minus::before {
+  content: '[-] ';
+}
+
+.ascii-list li.check::before {
+  content: '[x] ';
 }
 
 /* Content Area Markdown Styling */
 .content-area h1 {
-  font-size: 2.25rem;
-  font-family: 'Cormorant Garamond', 'EB Garamond', 'Tiempos Headline', serif;
+  font-size: 38px;
+  font-weight: 700;
   color: var(--color-ink);
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-  transition: color 0.3s ease;
+  margin-top: 0;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  letter-spacing: 0;
 }
 
 .content-area h2 {
-  font-size: 1.75rem;
-  font-family: 'Cormorant Garamond', 'EB Garamond', 'Tiempos Headline', serif;
+  font-size: 16px;
+  font-weight: 700;
   color: var(--color-ink);
-  margin-top: 1.75rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.3;
-  transition: color 0.3s ease;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  line-height: 1.5;
 }
 
 .content-area p {
   color: var(--color-body);
-  line-height: 1.75;
-  margin-bottom: 1.25rem;
-  font-family: 'Inter', sans-serif;
-  transition: color 0.3s ease;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  font-size: 16px;
 }
 
 .content-area ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  margin-bottom: 1.25rem;
-  color: var(--color-body);
-  transition: color 0.3s ease;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
 }
 
-.content-area li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
+.content-area ul li {
+  color: var(--color-body);
+  padding: 8px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.content-area ul li::before {
+  content: '[+] ';
+  color: var(--color-ink);
+  font-weight: 700;
+}
+
+.content-area ul li strong {
+  color: var(--color-ink);
+  font-weight: 700;
 }
 
 .content-area a {
-  color: var(--color-primary);
+  color: var(--color-ink);
   text-decoration: underline;
-  text-underline-offset: 4px;
-  transition: color 0.3s ease;
-}
-
-.content-area a:hover {
-  color: var(--color-primary-active);
+  text-underline-offset: 3px;
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
   background: var(--color-canvas);
-  transition: background-color 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-hairline);
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  background: var(--color-hairline-strong);
+  border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-card-elevated);
+  background: var(--color-mute);
 }
