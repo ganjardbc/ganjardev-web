@@ -2,29 +2,50 @@
   {
     "title": "UndangAbi",
     "description": "Platform undangan digital dengan manajemen tamu, RSVP digital, dan templat kustom.",
-    "techStack": ["Vue", "Nuxt", "Tailwind CSS", "Node.js", "PostgreSQL"],
+    "techStack": [
+      "Vue",
+      "Nuxt",
+      "Tailwind CSS",
+      "Node.js",
+      "PostgreSQL"
+    ],
     "link": "#",
-    "status": "Membangun"
+    "status": "Selesai"
   },
   {
     "title": "Sajiin",
     "description": "Menu QR pintar dan platform pemesanan untuk restoran dan kedai kopi.",
-    "techStack": ["Vue", "TypeScript", "Tailwind CSS", "Firebase"],
+    "techStack": [
+      "Vue",
+      "TypeScript",
+      "Tailwind CSS",
+      "Firebase"
+    ],
     "link": "#",
     "status": "Selesai"
   },
   {
     "title": "Insell",
     "description": "Platform mikro-SaaS yang membantu kreator menjual produk digital dengan konfigurasi minimal.",
-    "techStack": ["Nuxt", "Tailwind CSS", "Supabase", "Stripe"],
+    "techStack": [
+      "Nuxt",
+      "Tailwind CSS",
+      "Supabase",
+      "Stripe"
+    ],
     "link": "#",
-    "status": "Selesai"
+    "status": "Membangun"
   },
   {
     "title": "Coderium",
     "description": "Lingkungan pembelajaran interaktif untuk alur kerja pengembang dan simulasi terminal.",
-    "techStack": ["Vue", "TypeScript", "Node.js", "Docker"],
+    "techStack": [
+      "Vue",
+      "TypeScript",
+      "Node.js",
+      "Docker"
+    ],
     "link": "#",
-    "status": "Selesai"
+    "status": "Membangun"
   }
 ]
