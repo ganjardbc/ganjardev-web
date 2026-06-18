@@ -139,12 +139,12 @@ html.dark {
 
 /* Content Area Markdown Styling */
 .content-area h1 {
-  font-size: 38px;
+  font-size: clamp(24px, 5vw, 38px);
   font-weight: 700;
   color: var(--color-ink);
   margin-top: 0;
   margin-bottom: 24px;
-  line-height: 1.5;
+  line-height: 1.4;
   letter-spacing: 0;
 }
 

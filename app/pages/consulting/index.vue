@@ -1,5 +1,5 @@
 <template>
-  <div class="py-[96px] max-w-6xl mx-auto">
+  <div class="py-12 md:py-[96px] max-w-6xl mx-auto">
     <div class="border-b border-hairline pb-4 mb-8">
       <div class="font-mono font-bold text-[16px] leading-[1.5] text-ink uppercase mb-1">
         Consulting

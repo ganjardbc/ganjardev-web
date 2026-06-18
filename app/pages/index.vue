@@ -4,7 +4,7 @@
     <Hero />
 
     <!-- Editorial Bio (Nuxt Content) -->
-    <section class="py-[96px] border-b border-hairline">
+    <section class="py-12 md:py-[96px] border-b border-hairline">
       <ContentRenderer
         v-if="page"
         :value="page"
@@ -16,7 +16,7 @@
     </section>
 
     <!-- What I'm Building -->
-    <section class="py-[96px] border-b border-hairline">
+    <section class="py-12 md:py-[96px] border-b border-hairline">
       <SectionTitle
         :tag="t('section_focus_areas')"
         :title="t('section_building_title')"
@@ -30,9 +30,9 @@
         >
           <span class="font-mono font-bold text-[16px] leading-[1.5] text-ink shrink-0">[+]</span>
           <div class="flex flex-col gap-1 flex-1">
-            <div class="flex items-center justify-between gap-4">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4">
               <span class="font-mono font-bold text-[16px] leading-[1.5] text-ink">{{ item.title }}</span>
-              <Badge :text="item.status" :variant="item.statusVariant" />
+              <Badge :text="item.status" :variant="item.statusVariant" class="self-start sm:self-auto shrink-0" />
             </div>
             <p class="font-mono font-normal text-[16px] leading-[1.5] text-body">{{ item.description }}</p>
           </div>
@@ -41,7 +41,7 @@
     </section>
 
     <!-- Projects / Featured Work -->
-    <section class="py-[96px] border-b border-hairline">
+    <section class="py-12 md:py-[96px] border-b border-hairline">
       <SectionTitle
         :tag="t('section_portfolio')"
         :title="t('section_projects_title')"
@@ -61,7 +61,7 @@
     </section>
 
     <!-- Featured Content -->
-    <section class="py-[96px] border-b border-hairline">
+    <section class="py-12 md:py-[96px] border-b border-hairline">
       <SectionTitle
         :tag="t('section_publications')"
         :title="t('section_content_title')"
@@ -82,7 +82,7 @@
     </section>
 
     <!-- Tech Stack -->
-    <section class="py-[96px] border-b border-hairline">
+    <section class="py-12 md:py-[96px] border-b border-hairline">
       <SectionTitle
         :tag="t('section_capabilities')"
         :title="t('section_tech_stack_title')"
@@ -106,7 +106,7 @@
     </section>
 
     <!-- Currently / Timeline -->
-    <section class="py-[96px] border-b border-hairline">
+    <section class="py-12 md:py-[96px] border-b border-hairline">
       <SectionTitle
         :tag="t('section_updates')"
         :title="t('section_currently_title')"
@@ -125,16 +125,16 @@
     </section>
 
     <!-- Contact -->
-    <section class="py-[96px]">
+    <section class="py-12 md:py-[96px]">
       <div class="max-w-6xl mx-auto">
-        <div class="border border-hairline p-8 md:p-12">
+        <div class="border border-hairline p-5 sm:p-8 md:p-12">
           <h2 class="font-mono font-bold text-[16px] leading-[1.5] text-ink mb-2">
             {{ t('contact_title') }}
           </h2>
           <p class="font-mono font-normal text-[16px] leading-[1.5] text-body mb-8 max-w-2xl">
             {{ t('contact_subtitle') }}
           </p>
-          <div class="flex flex-wrap gap-3">
+          <div class="flex flex-col sm:flex-row flex-wrap gap-3">
             <CTAButton href="mailto:admin@ganjardev.web.id" variant="primary">
               {{ t('contact_email_btn') }}
             </CTAButton>

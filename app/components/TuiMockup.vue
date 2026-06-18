@@ -1,11 +1,11 @@
 <template>
   <div
-    class="w-full rounded-none p-16 md:p-24 flex flex-col items-center justify-center gap-8 transition-colors duration-200"
+    class="w-full rounded-none p-6 sm:p-12 md:p-24 flex flex-col items-center justify-center gap-6 md:gap-8 transition-colors duration-200"
     :style="{ backgroundColor: 'var(--color-tui-bg)' }"
   >
     <!-- Block-pixel ASCII wordmark -->
     <pre
-      class="font-mono text-[9px] md:text-[11px] leading-tight select-none overflow-x-auto text-center whitespace-pre transition-colors duration-200"
+      class="font-mono text-[7px] sm:text-[9px] md:text-[11px] leading-tight select-none overflow-x-auto text-center whitespace-pre transition-colors duration-200 w-full"
       :style="{ color: 'var(--color-tui-text)' }"
     >{{ asciiLogo }}</pre>
 
