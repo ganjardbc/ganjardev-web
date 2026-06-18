@@ -3,11 +3,11 @@
     <div class="flex items-start gap-2">
       <span class="font-mono font-bold text-[16px] leading-[1.5] text-ink shrink-0">[+]</span>
       <div class="flex flex-col flex-1">
-        <div class="flex items-center justify-between gap-4 mb-0">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 mb-0">
           <h3 class="font-mono font-bold text-[16px] leading-[1.5] text-ink">
             {{ title }}
           </h3>
-          <Badge :text="status" :variant="statusVariant" />
+          <Badge :text="status" :variant="statusVariant" class="self-start sm:self-auto shrink-0" />
         </div>
         <p class="font-mono font-normal text-[16px] leading-[1.5] text-body">
           {{ description }}

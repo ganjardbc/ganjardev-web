@@ -1,7 +1,7 @@
 <template>
   <!-- News badge strip -->
   <div class="border-b border-hairline py-3">
-    <div class="flex items-center gap-3">
+    <div class="flex flex-wrap items-center gap-2">
       <span
         class="inline-flex items-center px-2 py-0.5 font-mono text-[14px] leading-loose rounded-[4px] transition-colors duration-200"
         :style="{ backgroundColor: 'var(--color-tui-bg)', color: 'var(--color-tui-text)' }"
@@ -15,9 +15,9 @@
   </div>
 
   <!-- Hero text block -->
-  <section class="border-b border-hairline py-[96px]">
+  <section class="border-b border-hairline py-12 md:py-[96px]">
     <div class="max-w-6xl mx-auto space-y-8">
-      <h1 class="font-mono font-bold text-ink leading-[1.5] text-[38px] md:text-[38px]">
+      <h1 class="font-mono font-bold text-ink leading-[1.4] text-[26px] md:text-[38px]">
         {{ locale === 'id' ? 'Engineer Perangkat Lunak,<br>Penjelajah AI, Pembangun Produk' : 'Software Engineer,\nAI Explorer, Product Builder' }}
       </h1>
       <p class="font-mono font-normal text-[16px] leading-[1.5] text-body max-w-2xl">

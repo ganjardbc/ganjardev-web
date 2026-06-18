@@ -2,7 +2,7 @@
   <component
     :is="componentType"
     v-bind="bindingProps"
-    class="inline-flex items-center justify-center font-mono font-medium text-[16px] leading-[2] px-5 py-1 rounded-[4px] transition-colors focus:outline-none disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer no-underline"
+    class="inline-flex items-center justify-center font-mono font-medium text-[16px] leading-[2] px-5 py-2 sm:py-1 rounded-[4px] transition-colors focus:outline-none disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer no-underline"
     :class="variantClasses"
   >
     <slot />

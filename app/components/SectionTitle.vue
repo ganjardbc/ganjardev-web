@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-[96px] space-y-2 border-b border-hairline pb-4">
+  <div class="mb-10 md:mb-[96px] space-y-2 border-b border-hairline pb-4">
     <div v-if="tag" class="font-mono font-bold text-[16px] leading-[1.5] text-ink uppercase">
       {{ tag }}
     </div>
