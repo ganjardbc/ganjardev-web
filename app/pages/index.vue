@@ -90,16 +90,16 @@
       />
       <div class="space-y-0">
         <div
-          v-for="(stack, category) in techStack"
-          :key="category"
+          v-for="stack in techStack"
+          :key="stack.category"
           class="border-t border-hairline py-3 flex flex-col md:flex-row gap-4 last:border-b last:border-hairline"
         >
           <div class="flex items-start gap-2 md:w-48 shrink-0">
             <span class="font-mono font-bold text-[16px] text-ink">[+]</span>
-            <span class="font-mono font-bold text-[16px] leading-[1.5] text-ink">{{ category }}</span>
+            <span class="font-mono font-bold text-[16px] leading-[1.5] text-ink">{{ stack.category }}</span>
           </div>
           <div class="flex flex-wrap gap-2">
-            <Badge v-for="tech in stack" :key="tech" :text="tech" variant="outline" />
+            <Badge v-for="tech in stack.items" :key="tech" :text="tech" variant="outline" />
           </div>
         </div>
       </div>
@@ -138,14 +138,8 @@
             <CTAButton href="mailto:admin@ganjardev.web.id" variant="primary">
               {{ t('contact_email_btn') }}
             </CTAButton>
-            <CTAButton href="https://github.com/ganjardbc" target="_blank" variant="secondary">
-              GitHub
-            </CTAButton>
             <CTAButton href="https://linkedin.com/in/ganjarhadiatna" target="_blank" variant="secondary">
               LinkedIn
-            </CTAButton>
-            <CTAButton href="https://instagram.com/ganjar_hadiatna" target="_blank" variant="secondary">
-              Instagram
             </CTAButton>
           </div>
         </div>
@@ -167,6 +161,7 @@ import contentEn from '~/data/content_en.json'
 import contentId from '~/data/content_id.json'
 import projectsEn from '~/data/projects_en.json'
 import projectsId from '~/data/projects_id.json'
+import techstackData from '~/data/techstack.json'
 
 const { data: page } = await useAsyncData('landing-page', () => {
   const collectionName = locale.value === 'id' ? 'landing_id' : 'landing_en'
@@ -200,11 +195,7 @@ const buildingItems = computed(() => [
   }
 ])
 
-const techStack = {
-  'Frontend': ['Vue', 'Nuxt', 'TypeScript'],
-  'Backend': ['Node.js', 'PostgreSQL'],
-  'AI / Tools': ['Claude Code', 'OpenCode', 'Gemini', 'AI Agents']
-}
+const techStack = techstackData
 
 const timeline = computed(() => locale.value === 'id' ? timelineId : timelineEn)
 const featuredContent = computed(() => locale.value === 'id' ? contentId : contentEn)
