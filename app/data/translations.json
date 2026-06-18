@@ -1,0 +1,222 @@
+{
+  "nav_blog": {
+    "en": "Blog",
+    "id": "Blog"
+  },
+  "nav_newsletter": {
+    "en": "Newsletter",
+    "id": "Buletin"
+  },
+  "nav_courses": {
+    "en": "Courses",
+    "id": "Kursus"
+  },
+  "nav_consulting": {
+    "en": "Consulting",
+    "id": "Konsultasi"
+  },
+  "nav_saas": {
+    "en": "SaaS",
+    "id": "SaaS"
+  },
+  "hero_badge": {
+    "en": "Available for consulting",
+    "id": "Tersedia untuk konsultasi"
+  },
+  "hero_bio": {
+    "en": "I share insights about AI, software engineering, product development, and building digital businesses.",
+    "id": "Saya membagikan wawasan tentang AI, rekayasa perangkat lunak, pengembangan produk, dan membangun bisnis digital."
+  },
+  "hero_follow_tiktok": {
+    "en": "Follow on TikTok",
+    "id": "Ikuti di TikTok"
+  },
+  "hero_follow_instagram": {
+    "en": "Follow on Instagram",
+    "id": "Ikuti di Instagram"
+  },
+  "section_focus_areas": {
+    "en": "Focus Areas",
+    "id": "Fokus Utama"
+  },
+  "section_building_title": {
+    "en": "What I'm Building",
+    "id": "Apa yang Sedang Saya Bangun"
+  },
+  "section_building_subtitle": {
+    "en": "Current projects, software courses, and technical research I am actively working on.",
+    "id": "Proyek saat ini, kursus perangkat lunak, dan riset teknis yang sedang aktif saya kerjakan."
+  },
+  "badge_active_launch": {
+    "en": "Active Launch",
+    "id": "Peluncuran Aktif"
+  },
+  "section_portfolio": {
+    "en": "Portfolio",
+    "id": "Portofolio"
+  },
+  "section_projects_title": {
+    "en": "Featured Work",
+    "id": "Karya Unggulan"
+  },
+  "section_projects_subtitle": {
+    "en": "A selection of software products and platforms built from the ground up.",
+    "id": "Pilihan produk dan platform perangkat lunak yang dibangun dari awal."
+  },
+  "section_publications": {
+    "en": "Publications",
+    "id": "Publikasi"
+  },
+  "section_content_title": {
+    "en": "Featured Content",
+    "id": "Konten Pilihan"
+  },
+  "section_content_subtitle": {
+    "en": "Deep dives, software engineering insights, and tech videos shared across TikTok and YouTube.",
+    "id": "Bedah mendalam, wawasan rekayasa perangkat lunak, dan video teknologi yang dibagikan di TikTok dan YouTube."
+  },
+  "section_capabilities": {
+    "en": "Capabilities",
+    "id": "Kemampuan"
+  },
+  "section_tech_stack_title": {
+    "en": "Software Tech Stack",
+    "id": "Teknologi Perangkat Lunak"
+  },
+  "section_tech_stack_subtitle": {
+    "en": "Technologies and AI tools I use daily to build products and automate developer workflows.",
+    "id": "Teknologi dan alat AI yang saya gunakan setiap hari untuk membangun produk dan mengotomatiskan alur kerja pengembang."
+  },
+  "section_updates": {
+    "en": "Updates",
+    "id": "Pembaruan"
+  },
+  "section_currently_title": {
+    "en": "Currently",
+    "id": "Saat Ini"
+  },
+  "section_currently_subtitle": {
+    "en": "A live feed of what I am focusing on right now, updated dynamically.",
+    "id": "Umpan langsung tentang apa yang sedang saya fokuskan saat ini, diperbarui secara dinamis."
+  },
+  "contact_title": {
+    "en": "Interested in collaborating?",
+    "id": "Tertarik untuk berkolaborasi?"
+  },
+  "contact_subtitle": {
+    "en": "Whether you have a consulting inquiry, want to discuss software architecture, AI workflow integration, or just say hello—get in touch.",
+    "id": "Baik Anda memiliki pertanyaan konsultasi, ingin mendiskusikan arsitektur perangkat lunak, integrasi alur kerja AI, atau sekadar menyapa—hubungi saya."
+  },
+  "contact_email_btn": {
+    "en": "Email Me",
+    "id": "Email Saya"
+  },
+  "footer_building_public": {
+    "en": "Building in public.",
+    "id": "Membangun secara publik."
+  },
+  "footer_navigation": {
+    "en": "Navigation",
+    "id": "Navigasi"
+  },
+  "footer_product": {
+    "en": "Product",
+    "id": "Produk"
+  },
+  "footer_privacy": {
+    "en": "Privacy",
+    "id": "Privasi"
+  },
+  "footer_terms": {
+    "en": "Terms",
+    "id": "Ketentuan"
+  },
+  "footer_rights": {
+    "en": "All rights reserved.",
+    "id": "Hak cipta dilindungi undang-undang."
+  },
+  "view_project": {
+    "en": "View Project",
+    "id": "Lihat Proyek"
+  },
+  "back_to_home": {
+    "en": "Back to Home",
+    "id": "Kembali ke Beranda"
+  },
+  "status_coming_soon": {
+    "en": "Coming Soon",
+    "id": "Segera Hadir"
+  },
+  "status_in_progress": {
+    "en": "In Progress",
+    "id": "Sedang Berjalan"
+  },
+  "status_under_construction": {
+    "en": "Under Construction",
+    "id": "Dalam Pembangunan"
+  },
+  "status_building": {
+    "en": "Building",
+    "id": "Membangun"
+  },
+  "status_ongoing": {
+    "en": "Ongoing",
+    "id": "Sedang Berjalan"
+  },
+  "status_completed": {
+    "en": "Completed",
+    "id": "Selesai"
+  },
+  "loading_insights": {
+    "en": "Loading publication insights...",
+    "id": "Memuat wawasan publikasi..."
+  },
+  "stub_consulting_title": {
+    "en": "Consulting & Advisory",
+    "id": "Konsultasi & Penasihat"
+  },
+  "stub_consulting_badge": {
+    "en": "Open for Inquiry",
+    "id": "Menerima Pertanyaan"
+  },
+  "stub_consulting_body": {
+    "en": "Helping organizations build reliable AI systems, design scalable Vue/Nuxt application structures, and optimize AI-assisted engineering pipelines.",
+    "id": "Membantu organisasi membangun sistem AI yang andal, merancang struktur aplikasi Vue/Nuxt yang terukur, dan mengoptimalkan pipa rekayasa berbantuan AI."
+  },
+  "stub_consulting_btn": {
+    "en": "Inquire via Email",
+    "id": "Hubungi via Email"
+  },
+  "stub_blog_title": {
+    "en": "Blog & Insights",
+    "id": "Blog & Wawasan"
+  },
+  "stub_blog_body": {
+    "en": "Deep dives, tutorials, and insights about AI agents, Vue architecture, product engineering, and business strategies. Currently setting up the writing engine.",
+    "id": "Analisis mendalam, tutorial, dan wawasan tentang agen AI, arsitektur Vue, rekayasa produk, dan strategi bisnis. Saat ini sedang menyiapkan mesin penulisan."
+  },
+  "stub_courses_title": {
+    "en": "Production Courses",
+    "id": "Kursus Siap Produksi"
+  },
+  "stub_courses_body": {
+    "en": "High-end educational programs for modern developers. Learn production-ready Vue 3 ticketing architectures, state machines, and advanced agentic system frameworks.",
+    "id": "Program pendidikan tingkat tinggi untuk pengembang modern. Pelajari arsitektur tiket Vue 3 siap produksi, state machines, dan kerangka kerja sistem agen AI tingkat lanjut."
+  },
+  "stub_newsletter_title": {
+    "en": "The Newsletter",
+    "id": "Buletin Mingguan"
+  },
+  "stub_newsletter_body": {
+    "en": "A weekly letter sent directly to developers and product builders. Practical workflows on AI engineering, SaaS automation, and scaling vue codebases.",
+    "id": "Surat mingguan yang dikirim langsung ke pengembang dan pembuat produk. Alur kerja praktis tentang rekayasa AI, otomatisasi SaaS, dan peningkatan basis kode vue."
+  },
+  "stub_saas_title": {
+    "en": "SaaS Products",
+    "id": "Produk SaaS"
+  },
+  "stub_saas_body": {
+    "en": "Indie hacker micro-SaaS utilities built in public. Simple tools targeting guest invitation workflows, ticketing automation, and developers' engineering utilities.",
+    "id": "Utilitas mikro-SaaS indie hacker yang dibangun secara terbuka. Alat sederhana yang menargetkan alur kerja undangan tamu, otomatisasi tiket, dan utilitas rekayasa pengembang."
+  }
+}

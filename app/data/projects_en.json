@@ -1,0 +1,30 @@
+[
+  {
+    "title": "UndangAbi",
+    "description": "Digital invitation platform with guest management, digital RSVP, and custom templates.",
+    "techStack": ["Vue", "Nuxt", "Tailwind CSS", "Node.js", "PostgreSQL"],
+    "link": "#",
+    "status": "Building"
+  },
+  {
+    "title": "Sajiin",
+    "description": "Smart QR menu and ordering platform for restaurants and coffee shops.",
+    "techStack": ["Vue", "TypeScript", "Tailwind CSS", "Firebase"],
+    "link": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Insell",
+    "description": "Micro-SaaS platform helping creators sell digital products with minimal setup.",
+    "techStack": ["Nuxt", "Tailwind CSS", "Supabase", "Stripe"],
+    "link": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Coderium",
+    "description": "Interactive learning environment for developer workflows and terminal simulation.",
+    "techStack": ["Vue", "TypeScript", "Node.js", "Docker"],
+    "link": "#",
+    "status": "Completed"
+  }
+]

@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light Mode (Cream) Brand Colors */
+  --color-canvas: #faf9f5;
+  --color-card: #efe9de;
+  --color-card-elevated: #e8e0d2;
+  --color-ink: #141413;
+  --color-body: #3d3d3a;
+  --color-muted: #6c6a64;
+  --color-hairline: #e6dfd8;
+  --color-primary: #cc785c;
+  --color-primary-active: #a9583e;
+  --selection-bg: rgba(204, 120, 92, 0.25);
+}
+
+html.dark {
+  /* Dark Mode (Warm Black) Brand Colors */
+  --color-canvas: #0b0a09;
+  --color-card: #141311;
+  --color-card-elevated: #1e1c1a;
+  --color-ink: #faf9f5;
+  --color-body: #c5c2bc;
+  --color-muted: #8a857e;
+  --color-hairline: #282622;
+  --color-primary: #e07a5f;
+  --color-primary-active: #cc5b3e;
+  --selection-bg: rgba(224, 122, 95, 0.25);
+}
+
+@layer base {
+  html {
+    background-color: var(--color-canvas);
+    color: var(--color-body);
+    font-family: 'Inter', 'StyreneB', sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    transition: background-color 0.3s ease;
+  }
+
+  /* Custom selections */
+  ::selection {
+    background-color: var(--selection-bg);
+    color: var(--color-ink);
+  }
+
+  /* Custom typography modifications */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-ink);
+    font-family: 'Cormorant Garamond', 'EB Garamond', 'Tiempos Headline', serif;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+}
+
+@layer utilities {
+  .font-serif-display {
+    font-family: 'Cormorant Garamond', 'EB Garamond', 'Tiempos Headline', serif;
+  }
+  .font-sans-ui {
+    font-family: 'Inter', 'StyreneB', sans-serif;
+  }
+}
+
+/* Content Area Markdown Styling */
+.content-area h1 {
+  font-size: 2.25rem;
+  font-family: 'Cormorant Garamond', 'EB Garamond', 'Tiempos Headline', serif;
+  color: var(--color-ink);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+.content-area h2 {
+  font-size: 1.75rem;
+  font-family: 'Cormorant Garamond', 'EB Garamond', 'Tiempos Headline', serif;
+  color: var(--color-ink);
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+.content-area p {
+  color: var(--color-body);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.content-area ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: var(--color-body);
+  transition: color 0.3s ease;
+}
+
+.content-area li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.content-area a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.3s ease;
+}
+
+.content-area a:hover {
+  color: var(--color-primary-active);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-canvas);
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-hairline);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-card-elevated);
+}
