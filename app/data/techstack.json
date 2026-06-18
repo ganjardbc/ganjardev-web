@@ -1,0 +1,5 @@
+[
+  { "category": "Frontend", "items": ["Vue", "Nuxt", "TypeScript"] },
+  { "category": "Backend", "items": ["Node.js", "PostgreSQL"] },
+  { "category": "AI / Tools", "items": ["Claude Code", "OpenCode", "Gemini", "AI Agents"] }
+]
