@@ -9,6 +9,11 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/tailwindcss'
   ],
+  content: {
+    experimental: {
+      sqliteConnector: 'native'
+    }
+  },
   css: ['~/assets/css/main.css'],
   app: {
     head: {
