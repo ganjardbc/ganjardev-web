@@ -1,51 +1,37 @@
 [
   {
-    "title": "UndangAbi",
-    "description": "Platform undangan digital dengan manajemen tamu, RSVP digital, dan templat kustom.",
-    "techStack": [
-      "Vue",
-      "Nuxt",
-      "Tailwind CSS",
-      "Node.js",
-      "PostgreSQL"
-    ],
-    "link": "#",
-    "status": "Selesai"
+    "title": "CAF — Coderium Agent Framework",
+    "description": "Framework multi-agent yang dirancang sendiri untuk mengotomasi proses development, dari planning sampai deployment. Arsitektur 5-layer: knowledge base terstruktur, 8 agent spesialis dengan pola Plan-Implement-Verify, artifact handoff antar agent, quality gates otomatis, dan orchestration lewat webhook Linear yang memicu Claude Code headless di VPS.",
+    "techStack": ["Claude Code", "Linear", "MCP", "Hetzner/DigitalOcean VPS"],
+    "link": "https://caf.coderium.id",
+    "status": "Sedang Berjalan"
   },
   {
-    "title": "Sajiin",
-    "description": "Menu QR pintar dan platform pemesanan untuk restoran dan kedai kopi.",
-    "techStack": [
-      "Vue",
-      "TypeScript",
-      "Tailwind CSS",
-      "Firebase"
-    ],
-    "link": "#",
-    "status": "Selesai"
-  },
-  {
-    "title": "Insell",
-    "description": "Platform mikro-SaaS yang membantu kreator menjual produk digital dengan konfigurasi minimal.",
-    "techStack": [
-      "Nuxt",
-      "Tailwind CSS",
-      "Supabase",
-      "Stripe"
-    ],
-    "link": "#",
+    "title": "umkm-pos",
+    "description": "Sistem Point-of-Sale multi-tenant untuk bisnis kecil-menengah dengan AI agent sebagai pembeda utama. Sistem inti (multi-tenant, real-time) sudah berjalan, dilengkapi Agent Input Produk, Agent Laporan Harian, dan Agent Stok yang jadi fokus pengembangan berikutnya.",
+    "techStack": ["Vue 3", "Vite", "NestJS", "Prisma", "PostgreSQL", "PNPM Monorepo"],
+    "link": "https://insell.web.id",
     "status": "Membangun"
   },
   {
-    "title": "Coderium",
-    "description": "Lingkungan pembelajaran interaktif untuk alur kerja pengembang dan simulasi terminal.",
-    "techStack": [
-      "Vue",
-      "TypeScript",
-      "Node.js",
-      "Docker"
-    ],
-    "link": "#",
+    "title": "Coderium V2",
+    "description": "Rebuild penuh platform content-publishing & knowledge management untuk developer, dari arsitektur lama ke monorepo modern. Sekitar 20 dokumen arsitektur & desain sudah selesai, development aktif menggunakan CAF sejak awal.",
+    "techStack": ["PNPM", "TurboRepo", "NestJS", "Prisma", "PostgreSQL", "Vue 3", "PrimeVue", "Nuxt 3", "Cloudflare R2"],
+    "link": "https://coderium.id",
     "status": "Membangun"
+  },
+  {
+    "title": "AI Clipper CLI",
+    "description": "Tool open-source berbasis Python yang otomatis mengubah video YouTube panjang jadi klip viral siap-posting — download, transkripsi Whisper, deteksi segmen viral dengan Gemini, hingga auto-edit dengan face-tracking dan subtitle gaya \"Hormozi\".",
+    "techStack": ["Python", "Whisper", "Gemini API"],
+    "link": "https://github.com/ganjardbc/ai-clipper-cli",
+    "status": "Selesai"
+  },
+  {
+    "title": "AI Content Extension",
+    "description": "Chrome extension (Manifest V3) yang mengubah artikel di tab aktif jadi draft script Reels/TikTok atau carousel siap pakai, lewat LLM API OpenAI-compatible (OpenRouter, dll). Ekstraksi artikel otomatis, generate dua format sekaligus, riwayat generate tersimpan lokal di browser.",
+    "techStack": ["Chrome Extension (Manifest V3)", "JavaScript", "OpenAI-Compatible API"],
+    "link": "https://github.com/ganjardbc/ai-content-extension",
+    "status": "Selesai"
   }
 ]

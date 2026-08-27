@@ -1,5 +1,6 @@
 [
-  { "category": "Frontend", "items": ["Vue", "Nuxt", "TypeScript"] },
-  { "category": "Backend", "items": ["Node.js", "PostgreSQL"] },
-  { "category": "AI / Tools", "items": ["Claude Code", "OpenCode", "Gemini", "AI Agents"] }
+  { "category": "Frontend & Web", "items": ["JavaScript / TypeScript", "Vue 3", "Nuxt 3 (SSR)", "Vite", "Tailwind CSS", "PNPM + TurboRepo"] },
+  { "category": "Backend & Data", "items": ["NestJS", "Prisma ORM", "PostgreSQL", "Cloudflare R2 / MinIO"] },
+  { "category": "AI & Automation", "items": ["Multi-Agent Pipeline (CAF)", "Claude", "Gemini", "Whisper", "Telegram + Notion Orchestration", "Puppeteer / Playwright"] },
+  { "category": "Workflow & Tools", "items": ["Claude Code", "VPS Deployment (Hetzner/DigitalOcean)", "Linear"] }
 ]

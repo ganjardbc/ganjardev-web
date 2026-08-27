@@ -135,8 +135,11 @@
             {{ t('contact_subtitle') }}
           </p>
           <div class="flex flex-col sm:flex-row flex-wrap gap-3">
-            <CTAButton href="mailto:admin@ganjardev.web.id" variant="primary">
+            <CTAButton href="mailto:ganjardbc@gmail.com" variant="primary">
               {{ t('contact_email_btn') }}
+            </CTAButton>
+            <CTAButton href="https://wa.me/6289699181669" target="_blank" variant="secondary">
+              WhatsApp
             </CTAButton>
             <CTAButton href="https://linkedin.com/in/ganjarhadiatna" target="_blank" variant="secondary">
               LinkedIn
@@ -170,28 +173,28 @@ const { data: page } = await useAsyncData('landing-page', () => {
 
 const buildingItems = computed(() => [
   {
-    title: 'UndangAbi V2',
+    title: 'CAF — Coderium Agent Framework',
     description: locale.value === 'id'
-      ? 'Platform undangan digital dengan sistem manajemen tamu.'
-      : 'Digital invitation platform with guest management system.',
-    status: locale.value === 'id' ? 'Membangun' : 'Building',
-    statusVariant: 'status-amber' as const
-  },
-  {
-    title: locale.value === 'id' ? 'Kursus Ticketing Vue 3' : 'Vue 3 Ticketing Course',
-    description: locale.value === 'id'
-      ? 'Kursus arsitektur Vue tingkat produksi yang siap pakai.'
-      : 'Production-ready Vue architecture course.',
+      ? 'Framework multi-agent kustom untuk mengotomasi proses development, dari planning sampai deployment.'
+      : 'A custom multi-agent framework that automates the development process, from planning to deployment.',
     status: locale.value === 'id' ? 'Sedang Berjalan' : 'In Progress',
     statusVariant: 'status-amber' as const
   },
   {
-    title: locale.value === 'id' ? 'Riset Alur Kerja AI' : 'AI Workflow Research',
+    title: locale.value === 'id' ? 'AI Agent untuk umkm-pos' : 'AI Agents for umkm-pos',
     description: locale.value === 'id'
-      ? 'Mengeksplorasi otomatisasi AI, agen otonom, dan alur kerja rekayasa.'
-      : 'Exploring AI automation, agents, and engineering workflows.',
-    status: locale.value === 'id' ? 'Sedang Berjalan' : 'Ongoing',
-    statusVariant: 'status-coral' as const
+      ? 'Agent Input Produk, Laporan Harian, dan Stok untuk sistem POS multi-tenant.'
+      : 'Product Input, Daily Report, and Stock agents for a multi-tenant POS system.',
+    status: locale.value === 'id' ? 'Membangun' : 'Building',
+    statusVariant: 'status-amber' as const
+  },
+  {
+    title: locale.value === 'id' ? 'Rebuild Coderium V2' : 'Coderium V2 Rebuild',
+    description: locale.value === 'id'
+      ? 'Migrasi platform content-publishing & knowledge management ke monorepo modern.'
+      : 'Migrating a content-publishing and knowledge-management platform to a modern monorepo.',
+    status: locale.value === 'id' ? 'Membangun' : 'Building',
+    statusVariant: 'status-amber' as const
   }
 ])
 

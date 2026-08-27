@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="flex flex-wrap gap-3 pt-8">
-      <CTAButton href="mailto:admin@ganjardev.web.id" variant="primary">{{ t('stub_consulting_btn') }}</CTAButton>
+      <CTAButton href="mailto:ganjardbc@gmail.com" variant="primary">{{ t('stub_consulting_btn') }}</CTAButton>
       <CTAButton to="/" variant="secondary">{{ t('back_to_home') }}</CTAButton>
     </div>
   </div>
