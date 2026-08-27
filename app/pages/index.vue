@@ -135,8 +135,11 @@
             {{ t('contact_subtitle') }}
           </p>
           <div class="flex flex-col sm:flex-row flex-wrap gap-3">
-            <CTAButton href="mailto:admin@ganjardev.web.id" variant="primary">
+            <CTAButton href="mailto:ganjardbc@gmail.com" variant="primary">
               {{ t('contact_email_btn') }}
+            </CTAButton>
+            <CTAButton href="https://wa.me/6289699181669" target="_blank" variant="secondary">
+              WhatsApp
             </CTAButton>
             <CTAButton href="https://linkedin.com/in/ganjarhadiatna" target="_blank" variant="secondary">
               LinkedIn

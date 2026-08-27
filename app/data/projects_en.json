@@ -3,35 +3,35 @@
     "title": "CAF — Coderium Agent Framework",
     "description": "A multi-agent framework I designed to automate the development process, from planning to deployment. 5-layer architecture: a structured knowledge base, 8 specialist agents following a Plan-Implement-Verify pattern, artifact handoff between agents, automated quality gates, and orchestration via Linear webhooks that trigger headless Claude Code on a VPS.",
     "techStack": ["Claude Code", "Linear", "MCP", "Hetzner/DigitalOcean VPS"],
-    "link": "#",
+    "link": "https://caf.coderium.id",
     "status": "In Progress"
   },
   {
     "title": "umkm-pos",
     "description": "A multi-tenant Point-of-Sale system for small-to-medium businesses, with an AI agent as the key differentiator. The core system (multi-tenant, real-time) is live, with a Product Input Agent, Daily Report Agent, and Stock Agent as the next development focus.",
     "techStack": ["Vue 3", "Vite", "NestJS", "Prisma", "PostgreSQL", "PNPM Monorepo"],
-    "link": "#",
+    "link": "https://insell.web.id",
     "status": "Building"
   },
   {
     "title": "Coderium V2",
     "description": "A full rebuild of a content-publishing and knowledge-management platform for developers, moving from a legacy architecture to a modern monorepo. About 20 architecture and design docs are done, with active development using CAF from day one.",
     "techStack": ["PNPM", "TurboRepo", "NestJS", "Prisma", "PostgreSQL", "Vue 3", "PrimeVue", "Nuxt 3", "Cloudflare R2"],
-    "link": "#",
+    "link": "https://coderium.id",
     "status": "Building"
   },
   {
     "title": "AI Clipper CLI",
     "description": "An open-source Python tool that automatically turns long YouTube videos into viral, ready-to-post clips — download, Whisper transcription, viral segment detection with Gemini, and auto-editing with face-tracking and \"Hormozi\"-style subtitles.",
     "techStack": ["Python", "Whisper", "Gemini API"],
-    "link": "#",
+    "link": "https://github.com/ganjardbc/ai-clipper-cli",
     "status": "Completed"
   },
   {
-    "title": "Content Automation System (Notion + Hermes)",
-    "description": "An end-to-end pipeline that automates content creation — from idea to a ready-to-post carousel visual — for the @ganjar_hadiatna personal brand. Notion acts as memory, a Hermes agent on a VPS connected to Telegram acts as the operator, and a custom pipeline renders carousels automatically from drafts, complete with automatic scoring based on a 100-point rubric.",
-    "techStack": ["Notion API", "Hermes", "Vue 3", "Puppeteer", "Tailwind CSS"],
-    "link": "#",
-    "status": "Active"
+    "title": "AI Content Extension",
+    "description": "A Chrome extension (Manifest V3) that turns an article in the active tab into a ready-to-use Reels/TikTok script or carousel draft, via an OpenAI-compatible LLM API (OpenRouter, etc). Automatically extracts article content, generates both formats at once, with generation history stored locally in the browser.",
+    "techStack": ["Chrome Extension (Manifest V3)", "JavaScript", "OpenAI-Compatible API"],
+    "link": "https://github.com/ganjardbc/ai-content-extension",
+    "status": "Completed"
   }
 ]

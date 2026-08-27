@@ -42,7 +42,13 @@
             class="flex-1 py-3 text-center font-mono font-normal text-[14px] leading-[2] text-mute hover:text-ink no-underline transition-colors"
           >TikTok</a>
           <a
-            href="mailto:admin@ganjardev.web.id"
+            href="https://youtube.com/@ganjar_hadiatna"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex-1 py-3 text-center font-mono font-normal text-[14px] leading-[2] text-mute hover:text-ink no-underline transition-colors"
+          >YouTube</a>
+          <a
+            href="mailto:ganjardbc@gmail.com"
             class="flex-1 py-3 text-center font-mono font-normal text-[14px] leading-[2] text-mute hover:text-ink no-underline transition-colors"
           >Email</a>
         </div>
