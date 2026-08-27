@@ -1,51 +1,37 @@
 [
   {
-    "title": "UndangAbi",
-    "description": "Digital invitation platform with guest management, digital RSVP, and custom templates.",
-    "techStack": [
-      "Vue",
-      "Nuxt",
-      "Tailwind CSS",
-      "Node.js",
-      "PostgreSQL"
-    ],
+    "title": "CAF — Coderium Agent Framework",
+    "description": "A multi-agent framework I designed to automate the development process, from planning to deployment. 5-layer architecture: a structured knowledge base, 8 specialist agents following a Plan-Implement-Verify pattern, artifact handoff between agents, automated quality gates, and orchestration via Linear webhooks that trigger headless Claude Code on a VPS.",
+    "techStack": ["Claude Code", "Linear", "MCP", "Hetzner/DigitalOcean VPS"],
     "link": "#",
-    "status": "Completed"
+    "status": "In Progress"
   },
   {
-    "title": "Sajiin",
-    "description": "Smart QR menu and ordering platform for restaurants and coffee shops.",
-    "techStack": [
-      "Vue",
-      "TypeScript",
-      "Tailwind CSS",
-      "Firebase"
-    ],
-    "link": "#",
-    "status": "Completed"
-  },
-  {
-    "title": "Insell",
-    "description": "Micro-SaaS platform helping creators sell digital products with minimal setup.",
-    "techStack": [
-      "Nuxt",
-      "Tailwind CSS",
-      "Supabase",
-      "Stripe"
-    ],
+    "title": "umkm-pos",
+    "description": "A multi-tenant Point-of-Sale system for small-to-medium businesses, with an AI agent as the key differentiator. The core system (multi-tenant, real-time) is live, with a Product Input Agent, Daily Report Agent, and Stock Agent as the next development focus.",
+    "techStack": ["Vue 3", "Vite", "NestJS", "Prisma", "PostgreSQL", "PNPM Monorepo"],
     "link": "#",
     "status": "Building"
   },
   {
-    "title": "Coderium",
-    "description": "Interactive learning environment for developer workflows and terminal simulation.",
-    "techStack": [
-      "Vue",
-      "TypeScript",
-      "Node.js",
-      "Docker"
-    ],
+    "title": "Coderium V2",
+    "description": "A full rebuild of a content-publishing and knowledge-management platform for developers, moving from a legacy architecture to a modern monorepo. About 20 architecture and design docs are done, with active development using CAF from day one.",
+    "techStack": ["PNPM", "TurboRepo", "NestJS", "Prisma", "PostgreSQL", "Vue 3", "PrimeVue", "Nuxt 3", "Cloudflare R2"],
     "link": "#",
     "status": "Building"
+  },
+  {
+    "title": "AI Clipper CLI",
+    "description": "An open-source Python tool that automatically turns long YouTube videos into viral, ready-to-post clips — download, Whisper transcription, viral segment detection with Gemini, and auto-editing with face-tracking and \"Hormozi\"-style subtitles.",
+    "techStack": ["Python", "Whisper", "Gemini API"],
+    "link": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Content Automation System (Notion + Hermes)",
+    "description": "An end-to-end pipeline that automates content creation — from idea to a ready-to-post carousel visual — for the @ganjar_hadiatna personal brand. Notion acts as memory, a Hermes agent on a VPS connected to Telegram acts as the operator, and a custom pipeline renders carousels automatically from drafts, complete with automatic scoring based on a 100-point rubric.",
+    "techStack": ["Notion API", "Hermes", "Vue 3", "Puppeteer", "Tailwind CSS"],
+    "link": "#",
+    "status": "Active"
   }
 ]

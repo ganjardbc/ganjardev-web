@@ -17,7 +17,7 @@
   <!-- Hero text block -->
   <section class="border-b border-hairline py-12 md:py-[96px]">
     <div class="max-w-6xl mx-auto space-y-8">
-      <h1 class="font-mono font-bold text-ink leading-[1.4] text-[26px] md:text-[38px] whitespace-pre-line">{{ locale === 'id' ? 'Engineer Perangkat Lunak,\nPenjelajah AI, Pembangun Produk' : 'Software Engineer,\nAI Explorer, Product Builder' }}</h1>
+      <h1 class="font-mono font-bold text-ink leading-[1.4] text-[26px] md:text-[38px] whitespace-pre-line">{{ locale === 'id' ? 'Frontend Developer & Tech Lead,\nMembangun Sistem, Bukan Sekadar Tampilan' : 'Frontend Developer & Tech Lead,\nBuilding Systems, Not Just Interfaces' }}</h1>
       <p class="font-mono font-normal text-[16px] leading-[1.5] text-body max-w-2xl">
         {{ t('hero_bio') }}
       </p>

@@ -28,8 +28,8 @@
     "id": "Tersedia untuk konsultasi"
   },
   "hero_bio": {
-    "en": "I share insights about AI, software engineering, product development, and building digital businesses.",
-    "id": "Saya membagikan wawasan tentang AI, rekayasa perangkat lunak, pengembangan produk, dan membangun bisnis digital."
+    "en": "A tech lead with real product experience — from multi-tenant POS systems to custom AI agent frameworks. Now focused on helping Indonesian developers and business owners use AI practically, not just chase the trend.",
+    "id": "Tech lead dengan pengalaman membangun produk nyata — dari sistem POS multi-tenant sampai framework agent AI kustom. Sekarang fokus membantu developer dan pemilik bisnis Indonesia memanfaatkan AI secara praktis, bukan sekadar tren."
   },
   "hero_follow_tiktok": {
     "en": "Follow on TikTok",
@@ -104,12 +104,12 @@
     "id": "Umpan langsung tentang apa yang sedang saya fokuskan saat ini, diperbarui secara dinamis."
   },
   "contact_title": {
-    "en": "Interested in collaborating?",
-    "id": "Tertarik untuk berkolaborasi?"
+    "en": "Got a project, an AI system idea, or want to talk content?",
+    "id": "Ada proyek, ide sistem AI, atau mau ngobrol soal konten?"
   },
   "contact_subtitle": {
-    "en": "Whether you have a consulting inquiry, want to discuss software architecture, AI workflow integration, or just say hello—get in touch.",
-    "id": "Baik Anda memiliki pertanyaan konsultasi, ingin mendiskusikan arsitektur perangkat lunak, integrasi alur kerja AI, atau sekadar menyapa—hubungi saya."
+    "en": "Open to project collaboration, AI advisory consulting, or content partnerships. The fastest way to start: send a message.",
+    "id": "Terbuka untuk kolaborasi proyek, konsultasi AI agency, atau kerja sama konten. Cara tercepat untuk mulai: kirim pesan."
   },
   "contact_email_btn": {
     "en": "Email Me",

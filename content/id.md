@@ -1,11 +1,13 @@
-# Membangun di Era Kecerdasan Buatan
+# Tentang Aku
 
-Teknologi berubah dengan kecepatan yang belum pernah terjadi sebelumnya. Batasan antara rekayasa perangkat lunak, desain produk, dan kecerdasan buatan mulai memudar.
+Aku Ganjar, frontend developer dan tech lead dengan JavaScript sebagai bahasa utama. Aku menghabiskan sebagian besar waktu membangun sistem — bukan cuma UI, tapi arsitektur di baliknya: dari database schema, agent orchestration, sampai automation pipeline yang jalan tanpa perlu aku pegang terus.
 
-Saya percaya pengembang masa depan tidak hanya menulis kode — mereka merekayasa alur kerja, mengoordinasikan agen otonom, dan membangun sistem yang berpikir. Situs web ini berfungsi sebagai pusat informasi tempat saya membagikan temuan, proses pengembangan, kursus, dan eksperimen saya.
+Beberapa tahun terakhir, fokus aku bergeser dari sekadar "membuat produk" ke "membangun sistem yang bisa mengajar dirinya sendiri bekerja" — mulai dari framework multi-agent untuk automasi development (CAF), sampai sistem POS yang punya agent AI sendiri untuk bantu pemilik toko mengelola stok dan laporan harian. Aku percaya AI paling bernilai bukan saat jadi fitur tempelan, tapi saat benar-benar menghilangkan kerjaan manual yang selama ini bikin capek.
 
-## Filosofi
+Sekarang aku membagi waktu antara membangun produk (Coderium, umkm-pos), merancang sistem agent AI kustom, dan berbagi apa yang aku pelajari lewat konten — baik untuk developer Indonesia yang mau lebih jago pakai AI coding tools, maupun untuk pemilik bisnis yang mau punya sistem sendiri tanpa harus jadi programmer.
 
-- **Minimalis & Cepat**: Membangun produk ringan yang berfokus pada pengalaman pengguna dan iterasi yang cepat.
-- **Native-AI**: Memanfaatkan kecerdasan buatan (agentic AI) dan alur kerja LLM untuk mempercepat siklus rekayasa.
-- **Belajar Terbuka**: Mendokumentasikan setiap langkah perjalanan, mulai dari ide awal hingga arsitektur produksi.
+## Prinsip Kerja
+
+- **Praktis di atas segalanya** — sistem harus benar-benar dipakai, bukan cuma didemokan.
+- **AI sebagai pengganti kerja manual**, bukan sekadar chatbot tempelan.
+- **Belajar sambil membangun** — semua yang aku ajarkan sudah aku terapkan sendiri di proyek nyata.
