@@ -22,22 +22,19 @@
         :title="t('section_building_title')"
         :subtitle="t('section_building_subtitle')"
       />
-      <ul class="space-y-0">
-        <li
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div
           v-for="item in buildingItems"
           :key="item.title"
-          class="bg-canvas border-t border-hairline py-3 flex items-start gap-2 last:border-b last:border-hairline"
+          class="bg-canvas border border-hairline p-5 flex flex-col gap-2"
         >
-          <span class="font-mono font-bold text-[16px] leading-[1.5] text-ink shrink-0">[+]</span>
-          <div class="flex flex-col gap-1 flex-1">
-            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4">
-              <span class="font-mono font-bold text-[16px] leading-[1.5] text-ink">{{ item.title }}</span>
-              <Badge :text="item.status" :variant="item.statusVariant" class="self-start sm:self-auto shrink-0" />
-            </div>
-            <p class="font-mono font-normal text-[16px] leading-[1.5] text-body">{{ item.description }}</p>
+          <div class="flex items-start justify-between gap-3">
+            <span class="font-mono font-bold text-[16px] leading-[1.5] text-ink">{{ item.title }}</span>
+            <Badge :text="item.status" :variant="item.statusVariant" class="shrink-0" />
           </div>
-        </li>
-      </ul>
+          <p class="font-mono font-normal text-[16px] leading-[1.5] text-body">{{ item.description }}</p>
+        </div>
+      </div>
     </section>
 
     <!-- Projects / Featured Work -->
@@ -47,7 +44,7 @@
         :title="t('section_projects_title')"
         :subtitle="t('section_projects_subtitle')"
       />
-      <div class="space-y-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <ProjectCard
           v-for="project in projects"
           :key="project.title"
@@ -88,16 +85,13 @@
         :title="t('section_tech_stack_title')"
         :subtitle="t('section_tech_stack_subtitle')"
       />
-      <div class="space-y-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div
           v-for="stack in techStack"
           :key="stack.category"
-          class="border-t border-hairline py-3 flex flex-col md:flex-row gap-4 last:border-b last:border-hairline"
+          class="border border-hairline p-5 flex flex-col gap-3"
         >
-          <div class="flex items-start gap-2 md:w-48 shrink-0">
-            <span class="font-mono font-bold text-[16px] text-ink">[+]</span>
-            <span class="font-mono font-bold text-[16px] leading-[1.5] text-ink">{{ stack.category }}</span>
-          </div>
+          <span class="font-mono font-bold text-[16px] leading-[1.5] text-ink">{{ stack.category }}</span>
           <div class="flex flex-wrap gap-2">
             <Badge v-for="tech in stack.items" :key="tech" :text="tech" variant="outline" />
           </div>
@@ -112,16 +106,21 @@
         :title="t('section_currently_title')"
         :subtitle="t('section_currently_subtitle')"
       />
-      <ul class="space-y-0">
-        <li
-          v-for="(item, idx) in timeline"
-          :key="idx"
-          class="border-t border-hairline py-3 flex items-start gap-2 last:border-b last:border-hairline"
-        >
-          <span class="font-mono font-bold text-[16px] text-ink shrink-0">[+]</span>
-          <span class="font-mono font-normal text-[16px] leading-[1.5] text-body">{{ item }}</span>
-        </li>
-      </ul>
+      <div class="pl-2">
+        <div class="relative">
+          <div class="absolute left-0 top-2 bottom-2 w-px bg-hairline-strong -translate-x-1/2"></div>
+          <div class="space-y-6">
+            <div
+              v-for="(item, idx) in timeline"
+              :key="idx"
+              class="relative"
+            >
+              <span class="absolute left-0 top-[5px] w-[7px] h-[7px] rounded-full bg-ink -translate-x-1/2"></span>
+              <span class="block pl-5 font-mono font-normal text-[16px] leading-[1.5] text-body">{{ item }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact -->
